@@ -9,10 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DetailMovie extends AppCompatActivity {
 
-    ImageView[] starimg;
+    private ImageView[] starimg;
 
-    int count;
-
+    private int count;
 
 
     @Override
@@ -34,14 +33,14 @@ public class DetailMovie extends AppCompatActivity {
             txt_date.setText(movieModel.getDate());
             txt_desc.setText(movieModel.getDescription());
             count = (int) Math.floor((movieModel.getScore() / 100.0) * 5);
-            txt_bud.setText("Budget  : "+movieModel.getBudget());
-            txt_run.setText("Runtime : "+movieModel.getRuntime());
-            txt_rev.setText("Revenue : "+movieModel.getRevenue());
+            txt_bud.setText("Budget  : " + movieModel.getBudget());
+            txt_run.setText("Runtime : " + movieModel.getRuntime());
+            txt_rev.setText("Revenue : " + movieModel.getRevenue());
             txt_art.setText(movieModel.getArt());
         }
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
         showStar();
     }
 

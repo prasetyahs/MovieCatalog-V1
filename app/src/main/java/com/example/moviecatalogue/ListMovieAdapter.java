@@ -39,24 +39,24 @@ public class ListMovieAdapter extends BaseAdapter {
         }
         ViewHolder vh = new ViewHolder(view);
         MovieModel movieModel = movies.get(i);
-        vh.txt_desc.setText(movieModel.getDescription());
-        vh.txt_date.setText(movieModel.getDate());
-        vh.txt_title.setText(movieModel.getTitle());
-        vh.img_movie.setImageResource(movieModel.getImg());
+        vh.txtDesc.setText(movieModel.getDescription());
+        vh.txtDate.setText(movieModel.getDate());
+        vh.txtTitle.setText(movieModel.getTitle());
+        vh.imgMovie.setImageResource(movieModel.getImg());
         return view;
     }
 
 
     private class ViewHolder {
-        private ImageView img_movie;
-        private TextView txt_title;
-        private TextView txt_date;
-        private TextView txt_desc;
+        private ImageView imgMovie;
+        private TextView txtTitle;
+        private TextView txtDate;
+        private TextView txtDesc;
         ViewHolder(View v) {
-            img_movie = v.findViewById(R.id.img_movie);
-            txt_title = v.findViewById(R.id.txt_title);
-            txt_date = v.findViewById(R.id.txt_date);
-            txt_desc = v.findViewById(R.id.txt_desc);
+            imgMovie = v.findViewById(R.id.img_movie);
+            txtTitle = v.findViewById(R.id.txt_title);
+            txtDate = v.findViewById(R.id.txt_date);
+            txtDesc = v.findViewById(R.id.txt_desc);
         }
     }
 }

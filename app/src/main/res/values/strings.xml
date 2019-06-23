@@ -5,6 +5,7 @@
     <string name="description">description</string>
     <string name="overview">Overview</string>
     <string name="art">Artist</string>
+    <string name="descontent">Image</string>
     <string-array name="title">
         <item>A Star Is Born</item>
         <item>Aquaman</item>

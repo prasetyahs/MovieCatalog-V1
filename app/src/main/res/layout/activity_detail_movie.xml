@@ -14,7 +14,8 @@
         android:layout_marginLeft="@dimen/horizontal_size"
         android:layout_marginTop="@dimen/vertical_size"
         android:scaleType="fitXY"
-        android:src="@drawable/poster_venom" />
+        android:src="@drawable/poster_venom"
+        android:contentDescription="@string/descontent" />
 
 
     <TextView
